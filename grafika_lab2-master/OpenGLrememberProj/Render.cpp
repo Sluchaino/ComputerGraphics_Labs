@@ -324,20 +324,6 @@ void initRender(OpenGL *ogl)
 	camera.fi2 = 0.8;
 }
 
-void FiguraUp(std::vector<std::vector<double>> aaa, double height)
-{
-	for (int j = 0; j < aaa.size(); j++)
-	{
-		aaa[j][2] += height;
-	}
-	
-	
-	glEnd();
-	for (int j = 0; j < aaa.size(); j++)
-	{
-		aaa[j][2] -= height;
-	}
-}
 void Figura(std::vector<std::vector<double>> aaa, double height)
 {
 
